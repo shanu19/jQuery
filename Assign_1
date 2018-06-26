@@ -1,0 +1,74 @@
+<html>
+<title>jQuery</title>
+<head>
+<script src="jquery-3.3.1.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="jquery-3.3.1.min.map"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide(2000);
+    });
+    $("#show").click(function(){
+        $("p").show(500);
+    });
+});
+$(document).ready(function(){
+    $("#tog").click(function(){
+        $("p").toggle(1000);
+    });
+});
+$(document).ready(function(){
+    $("#tup").dblclick(function(){
+        $("test").slideUp(1000);
+    });
+    $("#tdouwn").dblclick(function(){
+        $("test").slideDown(500);
+    });
+});
+$(document).ready(function(){
+    $("#tslide").dblclick(function(){
+        $("test").slideToggle(1000);
+    });
+});
+$(document).ready(function(){
+$("button").mouseenter(function(){
+       $("#1").fadeIn();
+       $("#2").fadeIn("slow");
+       $("#3").fadeIn(4500);
+    });
+});
+$(document).ready(function(){
+$("#out").mouseenter(function(){
+       $("#1").fadeOut(2000);
+       $("#2").fadeOut("slow");
+       $("#3").fadeOut();
+    });
+});
+$(document).ready(function(){
+$("#toggle").mouseenter(function(){
+       $("#1").fadeToggle();
+       $("#2").fadeToggle("slow");
+       $("#3").fadeToggle(3000);
+    });
+});
+</script>
+</head>
+<body>
+<button id="hide">Hide</button> <br>
+<button id="show">Show</button> <br>
+<button id="tog">Toggle</button>
+<br> <br>
+<button id="tup">TogUp</button>
+<button id="tdouwn">TogDown</button>
+<button id="tslide">SlideToggle</button>
+<p> <img src="jQuery.png" width="50%" align="right"> </p>
+<br>
+<button>FadeIn</button>
+<button id="out">FadeOut</button>
+<button id="toggle">FadeToggle</button>
+<div id="1" style="width:50px;height:50px;display:none;background-color:blue;border-radius:50%;"></div>
+<div id="2" style="width:50px;height:50px;display:none;background-color:purple;border-radius:50%;"></div>
+<div id="3" style="width:50px;height:50px;display:none;background-color:Black; border-radius:50%;"></div>
+</body>
+</html>
